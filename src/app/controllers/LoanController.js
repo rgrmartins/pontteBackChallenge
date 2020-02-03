@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import Proposta from '../models/Proposta';
+import Loan from '../models/Loan';
 
 class PropostaController {
   async store(req, res) {
@@ -28,13 +28,17 @@ class PropostaController {
     }
 
     // Salvando no Banco e retornando o objeto no jSON
-    const response = await Proposta.create(req.body);
+    const response = await Loan.create(req.body);
 
-    return res.json({ response });
+    return res.json(response);
   }
 
   async index(req, res) {
-    return res.json({ ok: true });
+    // const { page = 1 } = req.query;
+
+    const response = await Loan.findAll();
+
+    return res.json(response);
   }
 }
 

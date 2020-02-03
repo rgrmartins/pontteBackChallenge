@@ -1,6 +1,6 @@
 import Sequelize, { Model } from 'sequelize';
 
-class Proposta extends Model {
+class Loan extends Model {
   static init(sequelize) {
     super.init(
       {
@@ -15,6 +15,7 @@ class Proposta extends Model {
         status_proposta: {
           type: Sequelize.ENUM,
           values: ['APROVADA', 'REPROVADA'],
+          defaultValue: null,
         },
         step_proposta: {
           type: Sequelize.ENUM,
@@ -31,4 +32,4 @@ class Proposta extends Model {
   }
 }
 
-export default Proposta;
+export default Loan;

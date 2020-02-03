@@ -1,6 +1,6 @@
 import { Model } from 'sequelize';
 
-class Proposta extends Model {
+class Documento extends Model {
   static init(sequelize) {
     super.init(
       {},
@@ -13,7 +13,7 @@ class Proposta extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.Proposta, {
+    this.belongsTo(models.Loan, {
       foreignKey: 'proposta_id',
       as: 'proposta',
     });
@@ -26,4 +26,4 @@ class Proposta extends Model {
   }
 }
 
-export default Proposta;
+export default Documento;

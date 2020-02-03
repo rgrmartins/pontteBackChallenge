@@ -9,7 +9,7 @@ module.exports = {
       },
       proposta_id: {
         type: Sequelize.INTEGER,
-        references: { model: 'propostas', key: 'id' },
+        references: { model: 'loans', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
         allowNull: false,

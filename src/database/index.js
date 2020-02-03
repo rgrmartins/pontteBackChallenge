@@ -4,9 +4,9 @@ import databaseConfig from '../config/database';
 
 import Documento from '../app/models/Documento';
 import File from '../app/models/File';
-import Proposta from '../app/models/Proposta';
+import Loan from '../app/models/Loan';
 
-const models = [Documento, File, Proposta];
+const models = [Documento, File, Loan];
 
 class Database {
   constructor() {

@@ -5,13 +5,17 @@ Aplicação destinada a geração, edição e listagem de contratos de emprésti
 Esta aplicação foi desenvolvida usando NodeJS para uma API REST, banco Postgres.
 
 # Algumas das tecnologias utilizadas
+ - Express
  - Nodemon,
  - Prettier,
  - Eslint (usando a Style Guide do Airbnb),
  - DotEnv (para configurações de variáveis de ambiente),
  - Youch,
  - Yup,
- - React-router-dom.
+ - React-router-dom,
+ - Cors,
+ - Crypto,
+ - Multer.
  
 A aplicação está utilizando containers docker para os banco de dados Postgres.
 
